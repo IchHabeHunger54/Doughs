@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[28,)"
+[[mods]]
+modId="doughs"
+version="${file.jarVersion}"
+displayName="Doughs"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/doughs"
+authors="IchHabeHunger54"
+description='''
+Requires you to bake bread, cake, cookies and pumpkin pies before you can actually eat them.
+'''

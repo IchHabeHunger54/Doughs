@@ -12,7 +12,7 @@ public class Doughs {
     public Doughs() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
-    public static DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, "doughs");
+    public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "doughs");
     static {
         ITEMS.register("bread_dough", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));
         ITEMS.register("cake_dough", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));

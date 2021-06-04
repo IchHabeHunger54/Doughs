@@ -1,5 +1,6 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[36,)"
+license="GPLv3"
 [[mods]]
 modId="doughs"
 version="${file.jarVersion}"
@@ -9,3 +10,15 @@ authors="IchHabeHunger54"
 description='''
 Requires you to bake bread, cake, cookies and pumpkin pies before you can actually eat them.
 '''
+[[dependencies.doughs]]
+modId="forge"
+versionRange="[36,)"
+mandatory=true
+ordering="NONE"
+side="BOTH"
+[[dependencies.doughs]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5]"
+ordering="NONE"
+side="BOTH"

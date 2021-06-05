@@ -1,14 +1,1 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:wheat"
-    }
-  },
-  "result": {
-    "item": "doughs:bread_dough"
-  }
-}
+{"key":{"#":{"item":"minecraft:wheat"}},"pattern":["###"],"result":{"item":"doughs:bread_dough"},"type":"minecraft:crafting_shaped"}

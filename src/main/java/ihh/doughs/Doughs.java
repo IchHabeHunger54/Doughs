@@ -1,7 +1,7 @@
 package ihh.doughs;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +14,9 @@ public class Doughs {
     }
     public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "doughs");
     static {
-        ITEMS.register("bread_dough", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));
-        ITEMS.register("cake_dough", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));
-        ITEMS.register("cookie_dough", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));
-        ITEMS.register("pumpkin_pie_dough", () -> new Item(new Item.Properties().group(ItemGroup.FOOD)));
+        ITEMS.register("bread_dough", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+        ITEMS.register("cake_dough", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+        ITEMS.register("cookie_dough", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+        ITEMS.register("pumpkin_pie_dough", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
     }
 }
